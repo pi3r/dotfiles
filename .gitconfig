@@ -1,0 +1,49 @@
+[user]
+	name = Pierre Nespo
+	email = pierre.nespo@shopify.com
+
+[github]
+	user = pi3r
+
+[branch]
+	autosetuprebase = always
+
+[push]
+	default = simple
+
+[merge]
+	log = true
+
+[rebase]
+	autosquash = true
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[core]
+	excludesfile = ~/.gitignore_global
